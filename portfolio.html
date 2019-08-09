@@ -11,7 +11,7 @@
 
         <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css?v=1.1.2">
+        <link rel="stylesheet" href="css/style.css?v=1.1.3">
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
@@ -24,108 +24,110 @@
 
     </head>
     <body class="page-template">
-        <!-- Main Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light" id="main-nav">
-                <div class="collapse navbar-collapse">
+        <div class="content-wrapper">
+            <!-- Main Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light" id="main-nav">
+                    <div class="collapse navbar-collapse">
+                        <!-- Navbar brand -->
+                        <a href="index.html"><h1 class="navbar-brand">Christopher Collins</h1></a>
+        
+                        <ul class="navbar-nav ml-auto">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        </ul>
+                    </div>
+                </nav><!-- #main-nav -->
+        
+                <!--Hamburger Navbar-->
+                <nav class="navbar navbar-light lighten-4" id="mobile-nav">
                     <!-- Navbar brand -->
-                    <a href="index.html"><h1 class="navbar-brand">Christopher Collins</h1></a>
-      
-                    <ul class="navbar-nav ml-auto">
-                      <!-- Links -->
-                      <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                      </li>
-                    </ul>
-                </div>
-              </nav><!-- #main-nav -->
-      
-              <!--Hamburger Navbar-->
-              <nav class="navbar navbar-light lighten-4" id="mobile-nav">
-                  <!-- Navbar brand -->
-                  <a class="navbar-brand" href="#">Christopher Collins</a>
-              
-                  <!-- Collapse button -->
-                  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-                  aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-                      class="fas fa-bars fa-1x"></i></span></button>
-              
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                      <!-- Links -->
-                      <ul class="navbar-nav mr-auto">
-                          <li class="nav-item">
-                              <a class="nav-link" href="index.html">About</a>
-                          </li>
-                          <li class="nav-item active">
-                              <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="contact.html">Contact</a>
-                          </li>
-                      </ul>
-                  </div>
-              </nav><!-- #mobile-nav -->
+                    <a class="navbar-brand" href="#">Christopher Collins</a>
+                
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                        class="fas fa-bars fa-1x"></i></span></button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav><!-- #mobile-nav -->
 
-        <!-- Main Content -->
-        <section class="section-block" id="main-section">
-            <div class="container-fluid">
-                <div class="row first-row">
-                    <h2>Portfolio</h2>
+            <!-- Main Content -->
+            <section class="section-block" id="main-section">
+                <div class="container-fluid">
+                    <div class="row first-row">
+                        <h2>Portfolio</h2>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-sm-12">
+                            <div class="blurb_content">
+                                <a href="https://deserttech.com/" target="_blank">
+                                    <span class="image_wrap">
+                                        <img src="img/deserttech-launch-2015.jpg" alt="Desert Tech Launch 2015">
+                                        <span class="image_overlay"></span>
+                                    </span>
+                                </a>
+                                <h4 class="module_header"><a href="#">Desert Tech Site</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-sm-12">
+                            <div class="blurb_content">
+                                <a href="https://cart.deserttech.com/mdr/#mdr" target="_blank">
+                                    <span class="image_wrap">
+                                        <img src="img/deserttech-mdr-campaign-2019.png" alt="Desert Tech MDR Campaign">
+                                        <span class="image_overlay"></span>
+                                    </span>
+                                </a>
+                                <h4 class="module_header"><a href="#">MDR Launch</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-sm-12">
+                            <div class="blurb_content">
+                                <a href="https://lighthouseprinting.design/" target="_blank">
+                                    <span class="image_wrap">
+                                        <img src="img/lighthouseprinting_design-launch.png" alt="Lighthouse Printing & Design">
+                                        <span class="image_overlay"></span>
+                                    </span>
+                                </a>
+                                <h4 class="module_header"><a href="#">Lighthouse Printing</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-6 col-sm-12">
+                            <div class="blurb_content">
+                                <a href="https://ccollins.io/" target="_blank">
+                                    <span class="image_wrap">
+                                        <img src="img/main-portfolio-site.png" alt="Main Portfolio Site">
+                                        <span class="image_overlay"></span>
+                                    </span>
+                                </a>
+                                <h4 class="module_header"><a href="#">Main Portfolio Site</a></h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <hr />
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-sm-12">
-                        <div class="blurb_content">
-                            <a href="https://deserttech.com/" target="_blank">
-                                <span class="image_wrap">
-                                    <img src="img/deserttech-launch-2015.jpg" alt="Desert Tech Launch 2015">
-                                    <span class="image_overlay"></span>
-                                </span>
-                            </a>
-                            <h4 class="module_header"><a href="#">Desert Tech Site</a></h4>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-12">
-                        <div class="blurb_content">
-                            <a href="https://cart.deserttech.com/mdr/#mdr" target="_blank">
-                                <span class="image_wrap">
-                                    <img src="img/deserttech-mdr-campaign-2019.png" alt="Desert Tech MDR Campaign">
-                                    <span class="image_overlay"></span>
-                                </span>
-                            </a>
-                            <h4 class="module_header"><a href="#">MDR Launch</a></h4>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-sm-12">
-                        <div class="blurb_content">
-                            <a href="https://lighthouseprinting.design/" target="_blank">
-                                <span class="image_wrap">
-                                    <img src="img/lighthouseprinting_design-launch.png" alt="Lighthouse Printing & Design">
-                                    <span class="image_overlay"></span>
-                                </span>
-                            </a>
-                            <h4 class="module_header"><a href="#">Lighthouse Printing</a></h4>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-lg-6 col-sm-12">
-                        <div class="blurb_content">
-                            <a href="https://ccollins.io/" target="_blank">
-                                <span class="image_wrap">
-                                    <img src="img/main-portfolio-site.png" alt="Main Portfolio Site">
-                                    <span class="image_overlay"></span>
-                                </span>
-                            </a>
-                            <h4 class="module_header"><a href="#">Main Portfolio Site</a></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- #main-section -->
+            </section><!-- #main-section -->
+        </div><!-- .content-wrapper -->
 
         <!-- Footer -->
         <footer id="main-footer">

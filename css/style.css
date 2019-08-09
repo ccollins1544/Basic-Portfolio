@@ -52,6 +52,18 @@
 /*------------------------------------------------------*/
 /* 1.1 Main Elements
 /*------------------------------------------------------*/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/** STICKY FOOTER 
+ * section margin 50px + footer height 54px = 104px
+ */ 
+.content-wrapper {
+    min-height: calc(100vh - 104px);
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: "Ubuntu";
     font-weight: 900;
@@ -86,7 +98,7 @@ section.section-block {
 section.section-block#main-section {
     border-radius: 5px;
     padding-bottom: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 li {
@@ -159,12 +171,12 @@ hr {
 .image_overlay::before {
     font-family: "Font Awesome 5 Free"; 
     position: absolute;
-    top: 55%;
+    top: 40%;
     left: 50%;
     margin: -16px 0 0 -16px;
     font-size: 32px;
     font-weight: 900;
-    content: "\f00c";
+    content: "\f35d"; /* "\f00c"; */ 
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
@@ -311,6 +323,7 @@ nav.navbar .collapse {
 /*------------------------------------------------------*/
 #main-footer {
     position: static;
+    height: 54px;
     color: var(--button-text);
     background-color: #000;
     text-align: center;
