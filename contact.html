@@ -22,23 +22,52 @@
 
     </head>
     <body class="page-template">
-        <!-- Nav Bar -->
+        <!-- Main Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light" id="main-nav">
-          <div class="collapse navbar-collapse">
-              <a href="/index.html"><h1 class="navbar-brand">Christopher Collins</h1></a>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="/index.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/contact.html">Contact</a>
-                </li>
-              </ul>
-          </div>
-        </nav><!-- #main-nav -->
+                <div class="collapse navbar-collapse">
+                    <!-- Navbar brand -->
+                    <a href="/"><h1 class="navbar-brand">Christopher Collins</h1></a>
+      
+                    <ul class="navbar-nav ml-auto">
+                      <!-- Links -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="/">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/portfolio.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                      </li>
+                    </ul>
+                </div>
+              </nav><!-- #main-nav -->
+      
+              <!--Hamburger Navbar-->
+              <nav class="navbar navbar-light lighten-4" id="mobile-nav">
+                  <!-- Navbar brand -->
+                  <a class="navbar-brand" href="#">Christopher Collins</a>
+              
+                  <!-- Collapse button -->
+                  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                  aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                      class="fas fa-bars fa-1x"></i></span></button>
+              
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                      <!-- Links -->
+                      <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="/">About <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="/portfolio.html">Portfolio</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="/contact.html">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav><!-- #mobile-nav -->
 
         <!-- Main Content -->
         <section class="section-block" id="main-section">
@@ -85,7 +114,7 @@
                 </div>
             </div><!-- #footer-nav -->
             <div id="footer-bottom">
-                <div id="footer-info">Copyright © 2019 | <a class="footer-link" href="/index.html">Christopher Collins</a> | <a class="footer-link" href="/index.html">Coding Bootcamp</a> | All Rights Reserved</div>
+                <div id="footer-info">Copyright © 2019 | <a class="footer-link" href="/">Christopher Collins</a> | <a class="footer-link" href="/">Coding Bootcamp</a> | All Rights Reserved</div>
             </div><!-- #footer-bottom -->
         </footer>
     </body>

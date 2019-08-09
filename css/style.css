@@ -12,6 +12,7 @@
 
 2.0 PAGE NAVI
   2.1 Main Nav
+  2.2 Hamburger Nav
 
 3.0 MAIN LAYOUT INFO
   3.1 AVATAR Picture
@@ -21,6 +22,8 @@
 
 5.0 DESKTOP RESPONSIVE
 6.0 MOBILE RESPONSIVE
+  6.1 @media only screen and (max-width: 1083px)
+  6.2 @media only screen and (max-width: 991px)
 /*------------------------------------------------------*/
 
 /*------------------------------------------------------*/
@@ -223,7 +226,7 @@ hr {
     color: rgba(0, 146, 202, 0.8);
 }
 
-.navbar-light .navbar-nav .nav-item:not(:first-child):not(:last-child) {
+#main-nav.navbar-light .navbar-nav .nav-item:not(:first-child):not(:last-child) {
   border-left: solid 1px var(--button-text);
   border-right: solid 1px var(--button-text);
 }
@@ -231,7 +234,7 @@ hr {
 
 nav.navbar {
     padding-bottom: 0px;
-    border: solid 2px var(--body-text);
+    border-bottom: solid 2px var(--body-text);
     background-color: #fff;
     padding-top: 0px;
     margin-bottom: 45px;
@@ -259,6 +262,16 @@ nav.navbar .collapse {
 .navbar-light .navbar-brand:focus, 
 .navbar-light .navbar-brand:hover {
     color: rgba(255,255,255,.8);
+}
+
+/* 2.2 Hamburger Nav
+/*------------------------------------------------------*/
+.dark-blue-text {
+    color: var(--accent-text);
+}
+
+#mobile-nav .nav-item {
+    text-align: right;
 }
 
 /*------------------------------------------------------*/
@@ -326,3 +339,28 @@ nav.navbar .collapse {
 /*------------------------------------------------------*/
 /*--------------[ 6.0 MOBILE RESPONSIVE ]---------------*/
 /*------------------------------------------------------*/
+#mobile-nav {
+    display: none;
+}
+
+/* 6.1 @media only screen and (max-width: 1083px)
+/*------------------------------------------------------*/
+@media only screen and (max-width: 1083px) {
+    nav.navbar {
+        padding-left: 0px;
+    }
+}
+
+/* 6.2 @media only screen and (max-width: 991px)
+/*------------------------------------------------------*/
+@media only screen and (max-width: 991px) {
+    #main-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+    }
+    
+}
+
