@@ -195,6 +195,7 @@ hr {
     margin: 0 auto;
     max-width: 550px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .blurb_content .image_wrap img {
