@@ -24,9 +24,10 @@
 6.0 MOBILE RESPONSIVE
   6.1 @media only screen and (max-width: 1083px)
   6.2 @media only screen and (max-width: 991px)
-  6.3 @media only screen and (max-width: 531px)
-  6.4 @media only screen and (max-width: 420px)
-  6.5 @media only screen and (max-width: 330px)
+  6.3 @media only screen and (max-width: 590px)
+  6.4 @media only screen and (max-width: 531px)
+  6.5 @media only screen and (max-width: 420px)
+  6.6 @media only screen and (max-width: 330px)
 /*------------------------------------------------------*/
 
 /*------------------------------------------------------*/
@@ -381,16 +382,32 @@ nav.navbar .collapse {
     
 }
 
-/* 6.3 @media only screen and (max-width: 531px)
+/* 6.3 @media only screen and (max-width: 590px)
+/*------------------------------------------------------*/
+@media only screen and (max-width: 590px) {
+    #main-footer {
+        height: 75px;
+    }
+
+    /** STICKY FOOTER 
+    * section margin 50px + footer height 75px = 104px
+    */ 
+    .content-wrapper {
+        min-height: calc(100vh - 125px);
+    }
+
+}
+
+/* 6.4 @media only screen and (max-width: 531px)
 /*------------------------------------------------------*/
 @media only screen and (max-width: 531px) {
     .navbar-brand {
-        font-size: 2.3em;
+        font-size: 2em;
     }
 }
 
 
-/* 6.4 @media only screen and (max-width: 420px)
+/* 6.5 @media only screen and (max-width: 420px)
 /*------------------------------------------------------*/
 @media only screen and (max-width: 420px) {
     .navbar-brand {
@@ -398,10 +415,10 @@ nav.navbar .collapse {
     }
 }
 
-/* 6.5 @media only screen and (max-width: 330px)
+/* 6.6 @media only screen and (max-width: 330px)
 /*------------------------------------------------------*/
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 360px) {
     .navbar-brand {
         font-size: 1.2em;
     }
-}
+}4
