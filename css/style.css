@@ -21,26 +21,26 @@
   4.1 Footer Credits
 
 5.0 DESKTOP RESPONSIVE
+  5.1 @media only screen and (max-width: 1083px)
+
 6.0 MOBILE RESPONSIVE
-  6.1 @media only screen and (max-width: 1083px)
-  6.2 @media only screen and (max-width: 991px)
-  6.3 @media only screen and (max-width: 590px)
+  6.1 @media only screen and (max-width: 991px)
+  6.2 @media only screen and (max-width: 768px)
+  6.3 @media only screen and (max-width: 600px)
   6.4 @media only screen and (max-width: 531px)
   6.5 @media only screen and (max-width: 420px)
   6.6 @media only screen and (max-width: 330px)
-/*------------------------------------------------------*/
-
 /*------------------------------------------------------*/
 /*--------------[ 0.0 THEME COLORS ]--------------------*/
 /*------------------------------------------------------*/
 /* 0.1 Color Variables
 /*------------------------------------------------------*/
 :root {
-    --accent-text: #0092CA; 
+    --accent-text: #0092CA;
     --primary-menu-background: #52616B;
     --secondary-menu-text: #F0F5F9;
-    --secondary-menu-background: rgba(0,0,0,0.8);
-    --body-text: #1E2022; 
+    --secondary-menu-background: rgba(0, 0, 0, 0.8);
+    --body-text: #1E2022;
     --body-background: #F0F5F9;
     --button-text: #C9D6Df;
     --button-background: #1E2022;
@@ -53,19 +53,25 @@
 /*------------------------------------------------------*/
 /* 1.1 Main Elements
 /*------------------------------------------------------*/
-html, body {
-  height: 100%;
-  margin: 0;
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
 /** STICKY FOOTER 
  * section margin 50px + footer height 54px = 104px
- */ 
+ */
 .content-wrapper {
     min-height: calc(100vh - 104px);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Ubuntu";
     font-weight: 900;
     color: var(--accent-text);
@@ -158,26 +164,27 @@ hr {
 }
 
 .image_overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.4);
-  opacity: 0;
-  z-index: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    z-index: 1;
 }
 
 .image_overlay::before {
-    font-family: "Font Awesome 5 Free"; 
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     top: 40%;
     left: 50%;
     margin: -16px 0 0 -16px;
     font-size: 32px;
     font-weight: 900;
-    content: "\f35d"; /* "\f00c"; */ 
+    content: "\f35d";
+    /* "\f00c"; */
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
@@ -192,11 +199,11 @@ hr {
     background-color: var(--accent-text);
 }
 
-.module_header:focus, 
+.module_header:focus,
 .module_header:hover,
 .blurb_content a:hover {
     text-decoration: none;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .blurb_content a {
@@ -237,17 +244,15 @@ hr {
     color: rgba(0, 146, 202, 0.6);
 }
 
-
-.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     color: rgba(0, 146, 202, 0.8);
 }
 
 #main-nav.navbar-light .navbar-nav .nav-item:not(:first-child):not(:last-child) {
-  border-left: solid 1px var(--button-text);
-  border-right: solid 1px var(--button-text);
+    border-left: solid 1px var(--button-text);
+    border-right: solid 1px var(--button-text);
 }
-
 
 nav.navbar {
     padding-bottom: 0px;
@@ -272,13 +277,13 @@ nav.navbar .collapse {
 }
 
 .navbar-light .navbar-brand {
-  margin-bottom: 0px;
-  color: #fff;
+    margin-bottom: 0px;
+    color: #fff;
 }
 
-.navbar-light .navbar-brand:focus, 
+.navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
 }
 
 /* 2.2 Hamburger Nav
@@ -298,7 +303,7 @@ nav.navbar .collapse {
 /*------------------------------------------------------*/
 .avatar_image {
     float: left;
-    margin: 0 20px;
+    margin: 0 20px 0 0;
 }
 
 .avatar_image .image_wrap {
@@ -307,14 +312,18 @@ nav.navbar .collapse {
     width: 200px;
     overflow: hidden;
     border: solid 6px var(--body-text);
-    box-shadow:0px 12px 18px -6px var(--primary-menu-background);
+    box-shadow: 0px 12px 18px -6px var(--primary-menu-background);
     border-radius: 50%;
 }
 
 #profile-picture,
 .avatar_image .image_wrap img {
-  max-width: 100%; 
-  height: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.fa-linkedin {
+    color: #0077B5;
 }
 
 /*------------------------------------------------------*/
@@ -323,7 +332,7 @@ nav.navbar .collapse {
 /* 4.1 Footer Credits
 /*------------------------------------------------------*/
 #main-footer {
-    position: static;
+    position: relative;
     height: 54px;
     color: var(--button-text);
     background-color: #000;
@@ -332,17 +341,48 @@ nav.navbar .collapse {
     border-top: solid 10px var(--primary-menu-background);
 }
 
-#footer-bottom {
-    padding: 10px 0px;
+#main-footer .footer-nav {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1080px;
 }
 
-#main-footer .bottom-nav {
-    display: none;
+#main-footer .footer-nav .container {
+    position: relative;
+    float: right;
+    width: 250px;
+    padding: 7px 0;
+    z-index: 1;
+}
+
+ul.bottom-nav {
+    float: right;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul.bottom-nav li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#footer-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 10px 0px;
+    z-index: 0;
 }
 
 .footer-link {
     color: var(--button-text);
-    text-decoration: none;   
+    text-decoration: none;
 }
 
 .footer-link:hover {
@@ -353,24 +393,31 @@ nav.navbar .collapse {
 /*------------------------------------------------------*/
 /*--------------[ 5.0 DESKTOP RESPONSIVE ]--------------*/
 /*------------------------------------------------------*/
-
-/*------------------------------------------------------*/
-/*--------------[ 6.0 MOBILE RESPONSIVE ]---------------*/
-/*------------------------------------------------------*/
-#mobile-nav {
-    display: none;
-}
-
-/* 6.1 @media only screen and (max-width: 1083px)
+/* 5.1 @media only screen and (max-width: 1083px)
 /*------------------------------------------------------*/
 @media only screen and (max-width: 1083px) {
     nav.navbar {
         padding-left: 0px;
     }
+
+    #main-footer .footer-nav {
+        padding-right: 5px;
+    }
+
+    #main-footer .footer-nav .container {
+        width: auto;
+    }
 }
 
-/* 6.2 @media only screen and (max-width: 991px)
 /*------------------------------------------------------*/
+/*--------------[ 6.0 MOBILE RESPONSIVE ]---------------*/
+/*------------------------------------------------------*/
+/* 6.1 @media only screen and (max-width: 991px)
+/*------------------------------------------------------*/
+#mobile-nav {
+    display: none;
+}
+
 @media only screen and (max-width: 991px) {
     #main-nav {
         display: none;
@@ -381,7 +428,7 @@ nav.navbar .collapse {
     }
 
     nav.navbar {
-        background-color: var(--accent-text);     
+        background-color: var(--accent-text);
     }
 
     .navbar-light .navbar-toggler {
@@ -394,24 +441,59 @@ nav.navbar .collapse {
         color: #fff;
     }
 
-    .navbar-light .navbar-nav .nav-link:focus, 
+    .navbar-light .navbar-nav .nav-link:focus,
     .navbar-light .navbar-nav .nav-link:hover {
         color: var(--button-text);
-    }    
+    }
 }
 
-/* 6.3 @media only screen and (max-width: 590px)
+/* 6.2 @media only screen and (max-width: 768px)
 /*------------------------------------------------------*/
-@media only screen and (max-width: 590px) {
-    #main-footer {
-        height: 75px;
-    }
+@media only screen and (max-width: 768px) {
 
     /** STICKY FOOTER 
-    * section margin 50px + footer height 75px = 104px
-    */ 
+    * section margin 50px + footer height 83px = 133px
+    */
     .content-wrapper {
-        min-height: calc(100vh - 125px);
+        min-height: calc(100vh - 133px);
+    }
+
+    #main-footer {
+        height: 83px;
+    }
+
+    #main-footer .footer-nav {
+        padding-right: 0px;
+    }
+
+    #main-footer .footer-nav .container {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    ul.bottom-nav {
+        float: none;
+    }
+}
+
+/* 6.3 @media only screen and (max-width: 600px)
+/*------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+    /** STICKY FOOTER 
+    * section margin 50px + footer height 107px = 157px
+    */
+    .content-wrapper {
+        min-height: calc(100vh - 157px);
+    }
+
+    #main-footer {
+        height: 107px;
+    }
+
+    #footer-bottom {
+        padding: 10px 15px;
     }
 
 }
@@ -430,6 +512,15 @@ nav.navbar .collapse {
 @media only screen and (max-width: 420px) {
     .navbar-brand {
         font-size: 1.5em;
+    }
+
+    #page-title {
+        margin: 0 auto;
+    }
+
+    .avatar_image {
+        float: none;
+        margin: 0 0 20px 0;
     }
 }
 

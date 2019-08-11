@@ -1,111 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Basic Portfolio</title>
-        <meta name="description" content="Portfolio Created in Coding Bootcamp Fall 2019" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Portfolio | About</title>
+    <meta name="description" content="Portfolio Created in Coding Bootcamp Fall 2019." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- CSS Stylesheets -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css?v=1.1.5">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu" rel="stylesheet">
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/v4-shims.css">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css?v=1.1.5">
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/v4-shims.css">
 
-    </head>
-    <body class="page-template">
-        <div class="content-wrapper">
-            <!-- Main Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light" id="main-nav">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="page-template">
+    <div class="content-wrapper">
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="main-nav">
             <div class="collapse navbar-collapse">
                 <!-- Navbar brand -->
-                <a href="index.html"><h1 class="navbar-brand">Christopher Collins</h1></a>
+                <a href="index.html">
+                    <h1 class="navbar-brand">Christopher Collins</h1>
+                </a>
 
                 <ul class="navbar-nav ml-auto">
                     <!-- Links -->
-                    <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
-            </nav><!-- #main-nav -->
+        </nav><!-- #main-nav -->
 
-            <!--Hamburger Navbar-->
-            <nav class="navbar navbar-light lighten-4" id="mobile-nav">
-                <!-- Navbar brand -->
-                <a class="navbar-brand" href="#">Christopher Collins</a>
-            
-                <!-- Collapse button -->
-                <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-                    class="fas fa-bars fa-1x"></i></span></button>
-            
-                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                    <!-- Links -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+        <!-- Mobile Navbar -->
+        <nav class="navbar navbar-light lighten-4" id="mobile-nav">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">Christopher Collins</a>
+
+            <!-- Collapse Button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                        class="fas fa-bars fa-1x"></i></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav><!-- #mobile-nav -->
+
+        <!-- Main Section -->
+        <section class="section-block" id="main-section">
+            <div class="container-fluid">
+                <div class="row first-row">
+                    <h2 id="page-title">About Me</h2>
                 </div>
-            </nav><!-- #mobile-nav -->
-
-            <!-- Main Content -->
-            <section class="section-block" id="main-section">
-                <div class="container-fluid">
-                    <div class="row first-row">
-                        <h2>About Me</h2>
-                    </div>
-                    <hr />
-                    <div class="row">
-                        <div>
-                            <div class="avatar_image">
-                                <span class="image_wrap">
-                                    <img src="img/profile-blk-cropped-1.jpg" alt="Christopher Collins Profile Avatar" id="profile-picture">
-                                </span>
-                            </div>
-                            <p>I’ve been actively developing in PHP professionally over the last 5 years. I’ve helped build numerous WordPress sites, developed custom WP plugins, themes, and very familiar with migrating sites. I’m constantly learning to stay up to speed with today’s market. </p>
-                            <p>I take pride in my work and strive to always provide quality work. If you’re interested in working together please shoot me an <a href="contact.html">email</a> and I’ll get back to you as soon as possible.</p>
+                <hr />
+                <div class="row">
+                    <div>
+                        <div class="avatar_image">
+                            <span class="image_wrap">
+                                <img src="img/profile-blk-cropped-1.jpg" alt="Christopher Collins Profile Avatar"
+                                    id="profile-picture">
+                            </span>
                         </div>
+                        <p>Hi, welcome to my portfolio website! I'm a freelance web developer who focuses on consumer
+                            needs and developing solutions.</p>
+                        <p>I’ve been actively developing in PHP professionally over the last 5 years. I’ve helped build
+                            numerous WordPress sites, developed custom WP plugins, themes, and very familiar with
+                            migrating sites. I’m constantly learning to stay up to speed with today’s market. </p>
+                        <p>I take pride in my work and strive to always provide quality work. If you’re interested in
+                            working together please shoot me an <a href="contact.html">email</a> and I’ll get back to
+                            you as soon as possible.</p>
                     </div>
                 </div>
-            </section><!-- #main-section -->
-        </div><!-- .content-wrapper -->
+            </div><!-- .container-fluid -->
+        </section><!-- #main-section -->
+    </div><!-- .content-wrapper -->
 
-        <!-- Footer -->
-        <footer id="main-footer">
-            <div class="footer-nav">
-                <div class="footer-block">
-                    <ul class="bottom-nav">
-                        <li></li>
-                    </ul>
-                </div>
-            </div><!-- #footer-nav -->
-            <div id="footer-bottom">
-                <div id="footer-info">Copyright © 2019 | <a class="footer-link" href="index.html">Christopher Collins</a> | <a class="footer-link" href="index.html">Coding Bootcamp</a> | All Rights Reserved</div>
-            </div><!-- #footer-bottom -->
-        </footer>
-    </body>
+    <!-- Footer -->
+    <footer id="main-footer">
+
+        <div class="footer-nav">
+            <div class="container clearfix">
+                <ul class="bottom-nav">
+                    <li>
+                        <a href="https://www.linkedin.com/in/ccollins1544/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </li>
+                </ul><!-- .bottom-nav -->
+            </div><!-- .container -->
+        </div><!-- #footer-nav -->
+
+        <div id="footer-bottom">
+            <div id="footer-info">Copyright © 2019 | <a class="footer-link" href="index.html">Christopher Collins</a> |
+                <a class="footer-link" href="index.html">Coding Bootcamp</a> | All Rights Reserved</div>
+        </div><!-- #footer-bottom -->
+
+    </footer><!-- #main-footer -->
+</body><!-- .page-template -->
+
 </html>
