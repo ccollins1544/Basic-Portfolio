@@ -53,10 +53,36 @@
 /*------------------------------------------------------*/
 /* 1.1 Main Elements
 /*------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
     margin: 0;
+}
+
+body.page-template {
+    font-size: 18px;
+    line-height: 34px;
+    font-family: "Ubuntu";
+    color: var(--body-text);
+    /* background-color: var(--body-background); */
+    background: url('../img/black_paper_800x800.png');
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 960px;
+    padding: 0px 30px;
 }
 
 /** STICKY FOOTER 
@@ -77,15 +103,13 @@ h6 {
     color: var(--accent-text);
 }
 
-body.page-template {
-    font-family: "Ubuntu";
-    color: var(--body-text);
-    background-color: var(--body-background);
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.container-fluid {
-    padding: 0px 30px;
-}
 
 .row {
     margin: 0 auto;
@@ -98,7 +122,7 @@ body.page-template {
 
 section.section-block {
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 960px;
     background-color: #fff;
 }
 
@@ -264,7 +288,7 @@ nav.navbar {
 
 nav.navbar .collapse {
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 960px;
 }
 
 .navbar-brand {
@@ -344,7 +368,7 @@ nav.navbar .collapse {
 #main-footer .footer-nav {
     position: relative;
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 960px;
 }
 
 #main-footer .footer-nav .container {
@@ -375,7 +399,7 @@ ul.bottom-nav li {
     left: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 960px;
     padding: 10px 0px;
     z-index: 0;
 }

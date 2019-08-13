@@ -11,16 +11,16 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu" rel="stylesheet">
 
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css?v=1.1.5">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/v4-shims.css">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -28,49 +28,51 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </head>
 
 <body class="page-template">
-    <div class="content-wrapper">
-        <!-- Main Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light" id="main-nav">
-            <div class="collapse navbar-collapse">
-                <!-- Navbar brand -->
-                <a href="index.html">
-                    <h1 class="navbar-brand">Christopher Collins</h1>
-                </a>
+    <header id="main-header">
+        <div class="container clearfix">
 
-                <ul class="navbar-nav ml-auto">
-                    <!-- Links -->
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+            <!-- Main Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light" id="main-nav">
+                <div class="collapse navbar-collapse">
+                    <!-- Navbar brand -->
+                    <a href="index.html">
+                        <h1 class="navbar-brand">Christopher Collins</h1>
+                    </a>
+                    
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Links -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                 </ul>
             </div>
         </nav><!-- #main-nav -->
-
+        
         <!-- Mobile Navbar -->
         <nav class="navbar navbar-light lighten-4" id="mobile-nav">
             <!-- Navbar brand -->
             <a class="navbar-brand" href="#">Christopher Collins</a>
-
+            
             <!-- Collapse Button -->
             <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="dark-blue-text"><i
-                        class="fas fa-bars fa-1x"></i></span></button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                <!-- Links -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                class="fas fa-bars fa-1x"></i></span></button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
                         <a class="nav-link" href="index.html">About</a>
                     </li>
                     <li class="nav-item">
@@ -81,8 +83,11 @@
                     </li>
                 </ul>
             </div>
-        </nav><!-- #mobile-nav -->
+        </nav><!-- #mobile-nav -->    
+      </div><!-- .container -->
+    </header><!-- #main-header -->
 
+    <div id="main-container" class="content-wrapper">
         <!-- Main Section -->
         <section class="section-block" id="main-section">
             <div class="container-fluid">
@@ -94,7 +99,7 @@
                     <div>
                         <div class="avatar_image">
                             <span class="image_wrap">
-                                <img src="img/profile-blk-cropped-1.jpg" alt="Christopher Collins Profile Avatar"
+                                <img src="assets/img/profile-blk-cropped-1.jpg" alt="Christopher Collins Profile Avatar"
                                     id="profile-picture">
                             </span>
                         </div>
@@ -110,11 +115,10 @@
                 </div>
             </div><!-- .container-fluid -->
         </section><!-- #main-section -->
-    </div><!-- .content-wrapper -->
+    </div><!-- #main-container -->
 
     <!-- Footer -->
     <footer id="main-footer">
-
         <div class="footer-nav">
             <div class="container clearfix">
                 <ul class="bottom-nav">
@@ -129,7 +133,7 @@
 
         <div id="footer-bottom">
             <div id="footer-info">Copyright © 2019 | <a class="footer-link" href="index.html">Christopher Collins</a> |
-                <a class="footer-link" href="index.html">Coding Bootcamp</a> | All Rights Reserved</div>
+                <a class="footer-link" href="index.html">Coding Bootcamp</a></div>
         </div><!-- #footer-bottom -->
 
     </footer><!-- #main-footer -->
