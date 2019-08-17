@@ -1,7 +1,7 @@
 /** 
  * MAIN CSS
  * Author:  Christopher Collins
- * Version: 2.2
+ * Version: 2.3
  * License: none (public domain)
  */
 /*===============[ TABLE OF CONTENTS ]===============
@@ -24,7 +24,7 @@
   4.1 Footer Credits and Links
 
 5.0 GRID LAYOUT
-  5.1 
+  5.1 Columns
 
 6.0 DESKTOP RESPONSIVE
   6.1 @media only screen and (max-width: 1083px)
@@ -426,6 +426,7 @@ img {
     /* margin-bottom: 45px; */
     background-color: #fff;
     border-bottom: solid 2px var(--body-text);
+    z-index: 1;
 }
 
 nav.navbar {
@@ -651,7 +652,7 @@ ul.bottom-nav img {
 /*------------------------------------------------------*/
 /*--------------[ 5.0 GRID LAYOUT ]---------------------*/
 /*------------------------------------------------------*/
-/* 5.1 
+/* 5.1 Columns
 /*------------------------------------------------------*/
 .col,
 .col-sm,
