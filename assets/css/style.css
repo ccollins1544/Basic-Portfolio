@@ -21,7 +21,7 @@
   3.1 AVATAR Picture
 
 4.0 FOOTER
-  4.1 Footer Credits
+  4.1 Footer Credits and Links
 
 5.0 GRID LAYOUT
   5.1 
@@ -96,10 +96,11 @@ body.page-template {
 }
 
 /** STICKY FOOTER 
- * header 135 + section margin 50px + footer height 54px = 239px
+ * section margin 50px + footer height 54px = 104px
  */
 .content-wrapper {
-    min-height: calc(100vh - 239px);
+    padding-top: 135px;
+    min-height: calc(100vh - 104px);
 }
 
 h1,
@@ -419,8 +420,10 @@ img {
 /* 2.1 Main Nav
 /*------------------------------------------------------*/
 #main-header {
+    position: fixed;
+    width: 100%;
     padding-bottom: 0px;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
     background-color: #fff;
     border-bottom: solid 2px var(--body-text);
 }
@@ -572,7 +575,7 @@ nav.navbar .collapse {
 /*------------------------------------------------------*/
 /*--------------[ 4.0 FOOTER ]--------------------------*/
 /*------------------------------------------------------*/
-/* 4.1 Footer Credits
+/* 4.1 Footer Credits and Links
 /*------------------------------------------------------*/
 #main-footer {
     position: relative;
@@ -611,6 +614,10 @@ ul.bottom-nav li {
     font-weight: 600;
 }
 
+ul.bottom-nav img {
+    margin-bottom: 10px;
+}
+
 #footer-bottom {
     position: absolute;
     bottom: 0;
@@ -631,6 +638,14 @@ ul.bottom-nav li {
 .footer-link:hover {
     text-decoration: none;
     color: var(--footer-hover-text);
+}
+
+.dark_icon {
+    background-color: var(--button-text);
+}
+
+.light_icon {
+    background-color: var(--button-background);
 }
 
 /*------------------------------------------------------*/
@@ -787,10 +802,10 @@ ul.bottom-nav li {
 @media only screen and (max-width: 768px) {
 
     /** STICKY FOOTER 
-    * header 135 + section margin 50px + footer height 83px = 268px
+    * section margin 50px + footer height 83px = 133px
     */
     .content-wrapper {
-        min-height: calc(100vh - 268px);
+        min-height: calc(100vh - 133px);
     }
 
     #main-footer {
@@ -817,10 +832,10 @@ ul.bottom-nav li {
 @media only screen and (max-width: 600px) {
 
     /** STICKY FOOTER 
-    * header 135 + section margin 50px + footer height 107px = 292px
+    * section margin 50px + footer height 107px = 157px
     */
     .content-wrapper {
-        min-height: calc(100vh - 292px);
+        min-height: calc(100vh - 157px);
     }
 
     #main-footer {
